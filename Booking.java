@@ -30,7 +30,7 @@ public class Booking {
         this.isTatkal = isTatkal;
     }
 
-    public synchronized void removePassengers(List<String> passengerNames) {
+    public void removePassengers(List<String> passengerNames) {
         Iterator<Passenger> iterator = passengers.iterator();
         while (iterator.hasNext()) {
             Passenger p = iterator.next();
